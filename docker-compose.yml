@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: billing_backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    networks:
+      - billingnet
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend/client
+      dockerfile: Dockerfile
+    container_name: billing_frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - billingnet
+    restart: always
+
+networks:
+  billingnet:
