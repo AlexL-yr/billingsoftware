@@ -1,0 +1,3 @@
+export const AppConstants = {
+  STRIPE_PUBLISHABLE_KEY:'pk_test_51SVxarBH6dI53WKHZFeanzMSx4DIxftkzRnVSkVnFhrm1lA2aV2oGLD5AbSXMPMs9aS7SeVwtskdJ51OlUPll5z300WuVg6Xws'
+}
