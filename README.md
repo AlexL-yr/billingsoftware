@@ -29,4 +29,6 @@ A full-stack retail billing system built with Spring Boot and React, supporting 
 - Docker, Jenkins CI/CD
 - AWS S3
 
-## Architecture
+Frontend (React) → Spring Boot REST API → MySQL
+→ AWS S3 (images)
+→ Stripe API (payments)
